@@ -46,9 +46,36 @@ Find the first recurring character in a given string
 
 *****
 
-## Conflicting appointments
+## Conflicting Appointments
 
-Given n appointments, find all conflicting appointments
+[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/find_conflicting_appointments.py)
+
+Given `n` appointments, find all the conflicting ones.
+
+Examples:
+```
+Input - Appointments: 
+[ 10 to 11 ]
+[ 8 to 9 ]
+[ 12 to 13 ]
+[ 12.2 to 12.5 ]
+[ 8.5 to 9.5 ]
+[ 2 to 4 ]
+[ 10.5 to 12.5 ]
+[ 3.5 to 8.5 ]
+
+Output - Conflicting appointments: 
+[ 12.2 to 12.5 ] with [ 12 to 13 ]
+[ 8.5 to 9.5 ] with [ 8 to 9 ]
+[ 10.5 to 12.5 ] with [ 10 to 11 ]
+[ 10.5 to 12.5 ] with [ 12 to 13 ]
+[ 3.5 to 8.5 ] with [ 8 to 9 ]
+[ 3.5 to 8.5 ] with [ 2 to 4 ]
+```
+
+### References
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/)
 
 *****
 
