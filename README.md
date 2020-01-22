@@ -92,4 +92,12 @@ Output - Conflicting appointments:
 
 ## Dictionary Implementation
 
+[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/dictionary_implementation.py)
+
+Implement a dictionary using a `Trie` such that if the input is a string representing a word, the program prints its meaning from the prebuilt dictionary.
+
+### References
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/implement-a-dictionary-using-trie/)
+
 *****
