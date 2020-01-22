@@ -1,6 +1,12 @@
 
 # Algorithms
 
+- [Tower of Hanoi Problem](#tower-of-hanoi-problem)
+- [Recursive Staircase](#recursive-staircase)
+- [First Recurring Character](#first-recurring-character)
+- [Conflicting Appointments](#conflicting-appointments)
+- [Dictionary Implementation](#dictionary-implementation)
+
 
 ## Tower of Hanoi Problem
 
@@ -36,13 +42,18 @@ In a second version of this problem is passed a set with all the possible stairs
 ### References
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/count-ways-reach-nth-stair/)
-- [Youtube]()
+- [Youtube](https://www.youtube.com/watch?v=5o-kdjv7FD0&list=PL7FWvzvL5ADKYeWwxL96btxTmsd3asDb2&index=5&t=0s)
 
 *****
 
-## First recurring character
+## First Recurring Character
 
-Find the first recurring character in a given string
+[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/first_recurring_character.py)
+
+Find the first recurring character in a given string.
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
+- [Youtube](https://www.youtube.com/watch?v=GJdiM-muYqc&list=PL7FWvzvL5ADKYeWwxL96btxTmsd3asDb2&index=4&t=0s)
 
 *****
 
@@ -79,6 +90,6 @@ Output - Conflicting appointments:
 
 *****
 
-## Dictionary implementation
+## Dictionary Implementation
 
 *****
