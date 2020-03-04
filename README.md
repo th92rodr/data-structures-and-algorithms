@@ -1,3 +1,32 @@
+# Data Structures
+
+A data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+
+- [Linked List / Doubly Linked List](https://github.com/Thiago92Rodrigues/algorithms/tree/master/linked-list)
+- [Stack]()
+- [Queue]()
+- [Hash Table]()
+- [Graph]()
+- [Binary Search Tree]()
+- [Trie]()
+- Heap
+
+## Data Structure Operations Big-O Complexity
+
+| Data Structure      | Access    | Search    | Insertion | Deletion  |
+| ------------------- | :-------: | :-------: | :-------: | :-------: |
+| Array               | O(1)      | O(n)      | O(n)      | O(n)      |
+| Stack               | O(n)      | O(n)      | O(1)      | O(1)      |
+| Queue               | O(n)      | O(n)      | O(1)      | O(1)      |
+| Linked List         | O(n)      | O(n)      | O(1)      | O(1)      |
+| Doubly Linked List  | O(n)      | O(n)      | O(1)      | O(1)      |
+| Hash Table          | -         | O(1)      | O(1)      | O(1)      |
+| Binary Search Tree  | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
+| B-Tree              | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
+| Red-Black Tree      | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
+| AVL Tree            | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
+
+---
 
 # Algorithms
 
