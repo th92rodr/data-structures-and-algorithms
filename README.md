@@ -2,13 +2,13 @@
 
 A data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
 
-- [Linked List / Doubly Linked List](https://github.com/Thiago92Rodrigues/algorithms/tree/master/linked-list)
-- [Stack]()
-- [Queue]()
-- [Hash Table]()
-- [Graph]()
-- [Binary Search Tree]()
-- [Trie]()
+- [Linked List / Doubly Linked List](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/linked-list)
+- [Stack](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/stack)
+- [Queue](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/queue)
+- [Hash Table](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/hash-table)
+- [Graph](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/graph)
+- [Binary Search Tree](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/binary-search-tree)
+- [Trie](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/trie)
 - Heap
 
 ## Data Structure Operations Big-O Complexity
@@ -39,7 +39,7 @@ A data structure is a particular way of organizing and storing data in a compute
 
 ## Tower of Hanoi Problem
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/tower_of_hanoi.py)
+[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/tower-of-hanoi.py)
 
 The Tower of Hanoi (also called the Tower of Brahma or Lucas' Tower and sometimes pluralized as Towers) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
 
@@ -62,7 +62,7 @@ With `3 disks`, the puzzle can be solved in `7 moves`. The minimal number of mov
 
 ## Recursive Staircase
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/recursive_staircase.py)
+[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/recursive-staircase.py)
 
 There are `n` stairs, a person standing at the bottom wants to reach the top. The person can climb either `1` or `2` stairs at a time. Count the number of ways, the person can reach the top.
 
@@ -77,7 +77,7 @@ In a second version of this problem is passed a set with all the possible stairs
 
 ## First Recurring Character
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/first_recurring_character.py)
+[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/first-recurring-character.py)
 
 Find the first recurring character in a given string.
 
@@ -88,7 +88,7 @@ Find the first recurring character in a given string.
 
 ## Conflicting Appointments
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/find_conflicting_appointments.py)
+[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/find-conflicting-appointments.py)
 
 Given `n` appointments, find all the conflicting ones.
 
@@ -121,7 +121,7 @@ Output - Conflicting appointments:
 
 ## Dictionary Implementation
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/algorithms/blob/master/dictionary_implementation.py)
+[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/dictionary-implementation.py)
 
 Implement a dictionary using a `Trie` such that if the input is a string representing a word, the program prints its meaning from the prebuilt dictionary.
 
