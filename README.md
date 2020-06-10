@@ -2,29 +2,29 @@
 
 A data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
 
-- [Linked List / Doubly Linked List](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/linked-list)
-- [Stack](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/stack)
-- [Queue](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/queue)
-- [Hash Table](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/hash-table)
-- [Graph](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/graph)
-- [Binary Search Tree](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/binary-search-tree)
-- [Trie](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/tree/master/data-structures/trie)
+- [Linked List / Doubly Linked List](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/linked-list)
+- [Stack](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/stack)
+- [Queue](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/queue)
+- [Hash Table](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/hash-table)
+- [Graph](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/graph)
+- [Binary Search Tree](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/binary-search-tree)
+- [Trie](https://github.com/th92rodr/data-structures-and-algorithms/tree/master/data-structures/trie)
 - Heap
 
 ## Data Structure Operations Big-O Complexity
 
-| Data Structure      | Access    | Search    | Insertion | Deletion  |
-| ------------------- | :-------: | :-------: | :-------: | :-------: |
-| Array               | O(1)      | O(n)      | O(n)      | O(n)      |
-| Stack               | O(n)      | O(n)      | O(1)      | O(1)      |
-| Queue               | O(n)      | O(n)      | O(1)      | O(1)      |
-| Linked List         | O(n)      | O(n)      | O(1)      | O(1)      |
-| Doubly Linked List  | O(n)      | O(n)      | O(1)      | O(1)      |
-| Hash Table          | -         | O(1)      | O(1)      | O(1)      |
-| Binary Search Tree  | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
-| B-Tree              | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
-| Red-Black Tree      | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
-| AVL Tree            | O(log n)  | O(log n)  | O(log n)  | O(log n)  |
+| Data Structure     |  Access  |  Search  | Insertion | Deletion |
+| ------------------ | :------: | :------: | :-------: | :------: |
+| Array              |   O(1)   |   O(n)   |   O(n)    |   O(n)   |
+| Stack              |   O(n)   |   O(n)   |   O(1)    |   O(1)   |
+| Queue              |   O(n)   |   O(n)   |   O(1)    |   O(1)   |
+| Linked List        |   O(n)   |   O(n)   |   O(1)    |   O(1)   |
+| Doubly Linked List |   O(n)   |   O(n)   |   O(1)    |   O(1)   |
+| Hash Table         |    -     |   O(1)   |   O(1)    |   O(1)   |
+| Binary Search Tree | O(log n) | O(log n) | O(log n)  | O(log n) |
+| B-Tree             | O(log n) | O(log n) | O(log n)  | O(log n) |
+| Red-Black Tree     | O(log n) | O(log n) | O(log n)  | O(log n) |
+| AVL Tree           | O(log n) | O(log n) | O(log n)  | O(log n) |
 
 ---
 
@@ -36,10 +36,9 @@ A data structure is a particular way of organizing and storing data in a compute
 - [Conflicting Appointments](#conflicting-appointments)
 - [Dictionary Implementation](#dictionary-implementation)
 
-
 ## Tower of Hanoi Problem
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/tower-of-hanoi.py)
+[Solution \o/](https://github.com/th92rodr/data-structures-and-algorithms/blob/master/algorithms/tower-of-hanoi.py)
 
 The Tower of Hanoi (also called the Tower of Brahma or Lucas' Tower and sometimes pluralized as Towers) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
 
@@ -58,11 +57,11 @@ With `3 disks`, the puzzle can be solved in `7 moves`. The minimal number of mov
 - [Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
 - [HackerEarth](https://www.hackerearth.com/blog/developers/tower-hanoi-recursion-game-algorithm-explained)
 
-*****
+---
 
 ## Recursive Staircase
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/recursive-staircase.py)
+[Solution \o/](https://github.com/th92rodr/data-structures-and-algorithms/blob/master/algorithms/recursive-staircase.py)
 
 There are `n` stairs, a person standing at the bottom wants to reach the top. The person can climb either `1` or `2` stairs at a time. Count the number of ways, the person can reach the top.
 
@@ -73,28 +72,29 @@ In a second version of this problem is passed a set with all the possible stairs
 - [GeeksForGeeks](https://www.geeksforgeeks.org/count-ways-reach-nth-stair/)
 - [Youtube](https://www.youtube.com/watch?v=5o-kdjv7FD0&list=PL7FWvzvL5ADKYeWwxL96btxTmsd3asDb2&index=5&t=0s)
 
-*****
+---
 
 ## First Recurring Character
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/first-recurring-character.py)
+[Solution \o/](https://github.com/th92rodr/data-structures-and-algorithms/blob/master/algorithms/first-recurring-character.py)
 
 Find the first recurring character in a given string.
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
 - [Youtube](https://www.youtube.com/watch?v=GJdiM-muYqc&list=PL7FWvzvL5ADKYeWwxL96btxTmsd3asDb2&index=4&t=0s)
 
-*****
+---
 
 ## Conflicting Appointments
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/find-conflicting-appointments.py)
+[Solution \o/](https://github.com/th92rodr/data-structures-and-algorithms/blob/master/algorithms/find-conflicting-appointments.py)
 
 Given `n` appointments, find all the conflicting ones.
 
 Examples:
+
 ```
-Input - Appointments: 
+Input - Appointments:
 [ 10 to 11 ]
 [ 8 to 9 ]
 [ 12 to 13 ]
@@ -104,7 +104,7 @@ Input - Appointments:
 [ 10.5 to 12.5 ]
 [ 3.5 to 8.5 ]
 
-Output - Conflicting appointments: 
+Output - Conflicting appointments:
 [ 12.2 to 12.5 ] with [ 12 to 13 ]
 [ 8.5 to 9.5 ] with [ 8 to 9 ]
 [ 10.5 to 12.5 ] with [ 10 to 11 ]
@@ -117,11 +117,11 @@ Output - Conflicting appointments:
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/)
 
-*****
+---
 
 ## Dictionary Implementation
 
-[Solution \o/](https://github.com/Thiago92Rodrigues/data-structures-and-algorithms/blob/master/algorithms/dictionary-implementation.py)
+[Solution \o/](https://github.com/th92rodr//data-structures-and-algorithms/blob/master/algorithms/dictionary-implementation.py)
 
 Implement a dictionary using a `Trie` such that if the input is a string representing a word, the program prints its meaning from the prebuilt dictionary.
 
@@ -129,4 +129,4 @@ Implement a dictionary using a `Trie` such that if the input is a string represe
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/implement-a-dictionary-using-trie/)
 
-*****
+---
