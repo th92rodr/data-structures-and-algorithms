@@ -63,7 +63,7 @@ class Graph:
         distances = {}
         distances[source] = 0
 
-        # dictionary to store the predecessores of each node
+        # dictionary to store the predecessor of each node
         pred = {}
 
         # create a hash to mark the visited nodes
@@ -89,7 +89,7 @@ class Graph:
                     while current_node is not None:
 
                         # if the current node is not yet in the dictionary
-                        # or it current value in the dict is greater than the new value
+                        # or its current value in the dict is greater than the new value
                         # update the distances dict
                         if current_node.data not in distances or \
                         distances[current_node.data] > distances[current.data] + 1:
