@@ -20,6 +20,8 @@ SORTING METHODS
 void bubble_sort(int *array, int size);
 void selection_sort(int *array, int size);
 void insertion_sort(int *array, int size);
+void quick_sort(int *array, int start, int end);
+int partition(int *array, int start, int end);
 
 int* generate_array(int size);
 void swap(int* a, int* b);
@@ -57,6 +59,7 @@ int main() {
         insertion_sort(array, size);
         break;
     case 4:
+        quick_sort(array, 0, size - 1);
         break;
     case 5:
         break;
@@ -136,6 +139,51 @@ void insertion_sort(int *array, int size) {
             }
         }
     }
+}
+
+/**
+ * QUICK SORT
+ *
+ * It is a divide and conquer algorithm.
+ * It picks an element as pivot and partitions the array around the picket pivot.
+ * By partition, it means to put the pivot element at its correct position in sorted array,
+ * and put all smaller elements (smaller than pivot) before it, and put all greater elements (greater than pivot) after it.
+ *
+ * O(n * (log n))
+ *
+ **/
+void quick_sort(int *array, int start, int end) {
+    if (start < end) {
+        // Place the selected pivot at its right position and return this position
+        int pivot = partition(array, start, end);
+
+        // Sort the elements before the pivot
+        quick_sort(array, start, pivot - 1);
+
+        // Sort the elements after the pivot
+        quick_sort(array, pivot + 1, end);
+    }
+}
+int partition(int *array, int start, int end) {
+    // Get the first element as pivot
+    int pivot = array[start];
+    // Assume the pivot correct position is at the begining of the array
+    int pivotCorrectPosition = start;
+
+    // Compare all the others elements with the pivot
+    // If the element is smaller than the pivot, increase the pivot correct position
+    // and place this smaller element before this position
+    for (int i = start+1; i <= end; i++) {
+        if (array[i] < pivot) {
+            pivotCorrectPosition++;
+            swap(&array[pivotCorrectPosition], &array[i]);
+        }
+    }
+
+    // Place the pivot in the correct position
+    swap(&array[pivotCorrectPosition], &array[start]);
+
+    return pivotCorrectPosition;
 }
 
 
