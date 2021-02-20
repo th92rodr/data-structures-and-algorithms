@@ -19,6 +19,7 @@ SORTING METHODS
 
 void bubble_sort(int *array, int size);
 void selection_sort(int *array, int size);
+void insertion_sort(int *array, int size);
 
 int* generate_array(int size);
 void swap(int* a, int* b);
@@ -53,6 +54,7 @@ int main() {
         selection_sort(array, size);
         break;
     case 3:
+        insertion_sort(array, size);
         break;
     case 4:
         break;
@@ -112,6 +114,27 @@ void selection_sort(int *array, int size) {
             }
         }
         swap(&array[i], &array[minor_index]);
+    }
+}
+
+/**
+ * INSERTION SORT
+ *
+ * Keep comparing adjacent elements and swapping them if they are in the wrong order.
+ * Doing this we always push the smaller element to the first position, in a way we don't need to compare it again.
+ *
+ * O(n²)
+ *
+ **/
+void insertion_sort(int *array, int size) {
+    for (int i = 1; i < size; i++) {
+        for (int j = i - 1; j >= 0; j--) {
+            if (array[j+1] < array[j]) {
+                swap(&array[j+1], &array[j]);
+            } else {
+                break;
+            }
+        }
     }
 }
 
