@@ -18,6 +18,7 @@ SORTING METHODS
 #include "stdbool.h"
 
 void bubble_sort(int *array, int size);
+void selection_sort(int *array, int size);
 
 int* generate_array(int size);
 void swap(int* a, int* b);
@@ -49,6 +50,7 @@ int main() {
         bubble_sort(array, size);
         break;
     case 2:
+        selection_sort(array, size);
         break;
     case 3:
         break;
@@ -88,6 +90,28 @@ void bubble_sort(int *array, int size) {
             }
         }
         exclude_last++;
+    }
+}
+
+/**
+ * SELECTION SORT
+ *
+ * Find the smallest element and swap it with the first position, as the first position is already sorted don't consider it anymore.
+ *
+ * O(n²)
+ *
+ **/
+void selection_sort(int *array, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        int minor = array[i],
+            minor_index = i;
+        for (int j = i + 1; j < size; j++) {
+            if (minor > array[j]) {
+                minor = array[j];
+                minor_index = j;
+            }
+        }
+        swap(&array[i], &array[minor_index]);
     }
 }
 
