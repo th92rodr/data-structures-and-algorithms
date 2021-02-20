@@ -22,6 +22,8 @@ void selection_sort(int *array, int size);
 void insertion_sort(int *array, int size);
 void quick_sort(int *array, int start, int end);
 int partition(int *array, int start, int end);
+void heap_sort(int *array, int size);
+void heapify(int *array, int size, int root);
 
 int* generate_array(int size);
 void swap(int* a, int* b);
@@ -62,6 +64,7 @@ int main() {
         quick_sort(array, 0, size - 1);
         break;
     case 5:
+        heap_sort(array, size);
         break;
     case 6:
         break;
@@ -184,6 +187,53 @@ int partition(int *array, int start, int end) {
     swap(&array[pivotCorrectPosition], &array[start]);
 
     return pivotCorrectPosition;
+}
+
+/**
+ * HEAP SORT
+ *
+ * This algorithm views the array as a tree.
+ * At first it turns the array into a max-heap (all nodes from the tree are greater than their children,
+ * i.e., the largest element is at the root and both its children are smaller than it, and so on).
+ * Then repeatedly swaps the first value of the array with the last value, decreasing the range of values
+ * considered in the heap one by one, and sifting the new first value into its position in the heap.
+ * This repeats until the range of considered values is just one value.
+ *
+ * O(n * (log n))
+ *
+ **/
+void heap_sort(int *array, int size) {
+    for (int i = size/2 - 1; i >= 0; i--) {
+        heapify(array, size, i);
+    }
+
+    for (int i = size - 1; i > 0; i--) {
+        swap(&array[0], &array[i]);
+        heapify(array, i, 0);
+    }
+}
+void heapify(int *array, int size, int root) {
+    int largest = root;
+    int left = 2*root + 1;
+    int right = 2*root + 2;
+
+    // If left child is bigger than root, replace root by child
+    if (left < size && array[largest] < array[left]) {
+        largest = left;
+    }
+
+    // If right child is bigger than root, replace root by child
+    if (right < size && array[largest] < array[right]) {
+        largest = right;
+    }
+
+    // If the original root is not the largest element, swap the largest to the root
+    if (largest != root) {
+        swap(&array[root], &array[largest]);
+
+        // Heapify the sub-tree
+        heapify(array, size, largest);
+    }
 }
 
 
