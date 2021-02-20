@@ -24,6 +24,8 @@ void quick_sort(int *array, int start, int end);
 int partition(int *array, int start, int end);
 void heap_sort(int *array, int size);
 void heapify(int *array, int size, int root);
+void merge_sort(int *array, int start, int end);
+void merge(int *array, int start, int middle, int end);
 
 int* generate_array(int size);
 void swap(int* a, int* b);
@@ -67,6 +69,7 @@ int main() {
         heap_sort(array, size);
         break;
     case 6:
+        merge_sort(array, 0, size - 1);
         break;
     }
 
@@ -234,6 +237,79 @@ void heapify(int *array, int size, int root) {
         // Heapify the sub-tree
         heapify(array, size, largest);
     }
+}
+
+/**
+ * MERGE SORT
+ *
+ * Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).
+ * Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+ *
+ * O(n * (log n))
+ *
+ **/
+void merge_sort(int *array, int start, int end) {
+    if (end > start) {
+        // Find the middle point to divide the array into two halves
+        // Same as (start + end)/2, but avoids overflow for start larger than end
+        int middle = start + (end - start) / 2;
+
+        // Sort the first half
+        merge_sort(array, start, middle);
+
+        // Sort the second half
+        merge_sort(array, middle + 1, end);
+
+        // Merge both halves, that are already sorted
+        merge(array, start, middle, end);
+    }
+}
+void merge(int *array, int start, int middle, int end) {
+    int size = end - start + 1;
+
+    int half1 = start;
+    int half2 = middle + 1;
+
+    bool half1ReachedEnd = false;
+    bool half2ReachedEnd = false;
+
+    // Create an auxiliary array
+    int *aux_array;
+    aux_array = (int *) malloc(size*sizeof(int));
+
+    if (aux_array != NULL) {
+        for (int i = 0; i < size; i++) {
+            if (!half1ReachedEnd && !half2ReachedEnd) {
+
+                // Check if the smallest value is on the first or the second half
+                if (array[half1] < array[half2]) {
+                    aux_array[i] = array[half1++]; // Smallest on the first
+                } else {
+                    aux_array[i] = array[half2++]; // Smallest on the second
+                }
+
+                // Check if any of the halves reached its end
+                if (half1 > middle) half1ReachedEnd = true;
+                if (half2 > end) half2ReachedEnd = true;
+
+            } else {
+                if (half1ReachedEnd) {
+                    // If the first half ended, copy the rest of the second half to the auxiliary array
+                    aux_array[i] = array[half2++];
+                } else {
+                    // If the second half ended, copy the rest of the first half to the auxiliary array
+                    aux_array[i] = array[half1++];
+                }
+            }
+        }
+
+        // Copy the values from the sorted auxiliary array back to the original array
+        for (int j = 0, k = start; j < size; j++, k++) {
+            array[k] = aux_array[j];
+        }
+    }
+
+    free(aux_array);
 }
 
 
